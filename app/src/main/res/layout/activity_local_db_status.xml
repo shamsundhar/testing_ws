@@ -1,0 +1,201 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/ll_local_db"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <include
+        layout="@layout/activity_title_bar"/>
+
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="20dp"
+     android:layout_gravity="center"
+     android:gravity="center"
+     android:text="Local DB Status"
+     android:textSize="30dp"
+     android:textColor="#4a4397"/>
+
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+    <LinearLayout
+        android:id="@+id/ll_db_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:id="@+id/tvproduct"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvfacility"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvschedule"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_asa"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_mal"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_asaa"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_pcm"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ohe"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ash"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_asar"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_amd"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_amt"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_asu"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_es"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_pb"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ul"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="15dp"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="35dp"
+           android:layout_marginTop="15dp"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="35dp"
+           android:layout_marginTop="15dp"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="35dp"
+           android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

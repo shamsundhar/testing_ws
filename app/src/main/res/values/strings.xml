@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">TRD_AMS</string>
+    <string name="please_wait_message">Please wait...</string>
+    <string name="logout_message">You have been logged out due to inactivity! You can Log In again.</string>
+    <string name="save_success_message">Data is saved successfully. You can log out or enter another set of data.</string>
+    <string name="save_failed_message">Failed to save data. You can edit the data by going back and save again.</string>
+    <string name="power_blocks">Power Blocks</string>
+    <string name="depot">Depot</string>
+    <string name="elementary_sections">Elementary Section Codes</string>
+    <string name="asset_types">Asset Types</string>
+    <string name="schedule_codes">Schedule Codes</string>
+    <string name="gps">GPS</string>
+    <string name="kilometer">KiloMeter</string>
+    <string name="assets">Assets</string>
+    <string name="measurement_date">Measurement Date</string>
+    <string name="range">Required Range:</string>
+    <string name="previous_values">Previous Values:</string>
+    <string name="previous_record">Previous Record:</string>
+    <string name="next">NEXT</string>
+    <string name="login">SIGN IN</string>
+    <string name="registration">REGISTRATION</string>
+    <string name="submit">SUBMIT</string>
+    <string name="username">User Id</string>
+    <string name="password">Password</string>
+    <string name="logout">SIGN OUT</string>
+    <string name="gotologin">GOTO LOGIN</string>
+    <string name="exit">EXIT</string>
+    <string name="startover">Select Another Asset</string>
+    <string name="enter_measure">Enter measure value</string>
+    <string name="enter_activity_status">Enter activity status</string>
+    <string name="activity">Activity</string>
+    <string name="title_activity_title_bar">TitleBarActivity</string>
+    <string name="dataSynkSplash">Data Loading....</string>
+    <string-array name="EntryStatus">
+        <item>EntryPending</item>
+        <item>EntryCompleted</item>
+    </string-array>
+    <string name="register">Register</string>
+
+    <string name="data_sync_preferences_file">trd.ams.data_sync_preferences</string>
+    <string name="registration_imei_auth">trd.ams.registration_imei_auth</string>
+
+    <string name="internet">Make sure you have an active internet connection</string>
+    <string name="server">Check Server Connectivity</string>
+    <string name="no_dto">No Assets</string>
+    <string name="graph">graphs</string>
+
+
+</resources>

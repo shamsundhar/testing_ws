@@ -1,0 +1,7 @@
+#Fri Feb 22 21:41:06 IST 2019
+base.0=/Users/syammanu/Downloads/testing_ws/app/build/intermediates/transforms/dexMerger/debug/1
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/syammanu/Downloads/testing_ws/app/build/intermediates/transforms/dexMerger/debug/0

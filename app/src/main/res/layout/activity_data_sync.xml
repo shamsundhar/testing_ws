@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/dataSync">
+
+    <include
+        layout="@layout/activity_title_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvDataSyncStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="center"
+        android:layout_marginTop="30dp"
+        android:text="Data Sync Status : "
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tvDataSyncStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="center"
+        android:layout_marginTop="20dp"
+        android:text="Start Time : "
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tvDataSyncFinishTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="center"
+        android:layout_marginTop="20dp"
+        android:text="Finish Time : "
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/tvDataSyncResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="center"
+        android:layout_marginTop="20dp"
+        android:text="Result : "
+        android:textSize="16sp"
+        />
+
+
+
+        <ProgressBar
+            android:id="@+id/progressBarDataSync"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:background="@drawable/circle_shape"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="24"
+            android:progress="0"
+            android:visibility="invisible"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tvDataSyncResult"
+             />
+
+    <Button
+        android:id="@+id/btnDataSyncNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sync Now"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:background="#738b28"
+        android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="trd.ams.activity.AsRecordActivity"
+    android:orientation="vertical"
+    android:layout_margin="12dp">
+
+    <include
+        layout="@layout/activity_title_bar"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Asset Schedule Record report"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:background="#738b28"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/ll_asRecord"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <Spinner
+            android:spinnerMode="dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/spFacilityR"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+        </Spinner>
+
+
+        <Spinner
+            android:spinnerMode="dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/spAssetTypesR"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+        </Spinner>
+
+        <Spinner
+            android:spinnerMode="dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/spSchedulecodesR"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+        </Spinner>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/recordKm_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/etKilometersR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="25dp"
+                android:hint="Enter Kilometer"
+                android:focusableInTouchMode="true"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <Spinner
+            android:spinnerMode="dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/spAssetIdsR"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+        </Spinner>
+
+
+
+
+        <Spinner
+            android:spinnerMode="dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/spDateR"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+        </Spinner>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_submit_record"
+            android:text="Submit"
+            android:layout_marginTop="30dp"
+           android:layout_gravity="center"
+            android:background="#738b28"
+            android:textColor="#FFF"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"/>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

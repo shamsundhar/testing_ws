@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="trd.ams">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+
+    <application
+        android:name=".common.Globals"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:windowSoftInputMode="adjustResize">
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AssetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MeasuresActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden|adjustPan"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ActivitiesActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.TitleBarActivity"
+            android:label="@string/title_activity_title_bar"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.StatusActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.DataSyncActivity" />
+        <activity android:name=".activity.DateShowActivity" />
+        <activity android:name=".activity.RegistrationActivity" />
+        <activity android:name=".activity.GetIdActivity" />
+        <activity android:name=".activity.ReportsActivity"></activity>
+        <activity android:name=".activity.ImageActivity"/>
+        <activity android:name=".activity.ProgressActivity"/>
+        <activity android:name=".activity.AsHistoryActivity"/>
+        <activity android:name=".activity.AsRecordActivity" />
+        <activity android:name=".activity.OverdueActivity" />
+        <activity android:name=".activity.AssetScheduleGraphActivity"/>
+        <activity android:name=".activity.GraphActivity"/>
+        <activity android:name=".activity.LocalDBStatusActivity"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.my.package.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

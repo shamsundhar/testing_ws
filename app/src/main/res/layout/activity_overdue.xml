@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="trd.ams.activity.OverdueActivity"
+    android:orientation="vertical"
+    android:layout_margin="12dp">
+
+    <include
+        layout="@layout/activity_title_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Overdue"
+        android:layout_gravity="center"
+        android:background="#738b28"
+        android:textColor="#ffffff"
+        android:textStyle="normal"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/ll_overdue"
+            android:orientation="vertical">
+
+            <Spinner
+                android:spinnerMode="dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/spFacilityO"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+            </Spinner>
+
+
+            <Spinner
+                android:spinnerMode="dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/spAssetTypesO"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+            </Spinner>
+
+            <Spinner
+                android:spinnerMode="dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/spSchedulecodesO"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+            </Spinner>
+
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spFromDate"
+                android:layout_marginTop="20dp"
+            android:editable="false"
+            android:hint="select From date"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spThruDate"
+                android:editable="false"
+                android:hint="select Thru date"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_submit_overdue"
+                android:text="Submit"
+                android:layout_marginTop="20dp"
+                android:background="#738b28"
+                android:textColor="#FFF"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

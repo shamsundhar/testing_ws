@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PopupMenu" parent="@style/ThemeOverlay.AppCompat">
+        <item name="android:popupBackground">#b5b4e2</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+
+    </style>
+</resources>

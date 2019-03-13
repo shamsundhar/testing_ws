@@ -1,0 +1,712 @@
+
+
+
+CREATE TABLE product
+( product_id TEXT PRIMARY KEY NOT NULL,
+product_type_id TEXT,
+internal_name TEXT,
+brand_name TEXT,
+comments TEXT,
+product_name TEXT,
+description TEXT,
+long_description TEXT,
+quantity_uom_id TEXT,
+quantity_included numeric(18,6),
+charge_shipping TEXT,
+auto_create_keywords TEXT,
+bill_of_material_level numeric(20,0),
+config_id TEXT,
+product_make_details TEXT,
+material_classification TEXT,
+is_active TEXT,
+is_serialized TEXT,
+product_code_type_id TEXT,
+pl_no TEXT, rly_id TEXT,
+trd_div_id TEXT,
+created_date TEXT,
+created_by_user_login TEXT,
+last_modified_date TEXT,
+last_modified_by_user_login TEXT,
+last_updated_stamp TEXT,
+last_updated_tx_stamp TEXT,
+created_stamp TEXT,
+created_tx_stamp TEXT
+);
+
+
+CREATE TABLE facility
+(
+  facility_id TEXT PRIMARY KEY,
+ facility_type_id TEXT,
+ parent_facility_id TEXT,
+ owner_party_id TEXT,
+ default_inventory_item_type_id TEXT,
+ facility_name TEXT,
+ primary_facility_group_id TEXT,
+ square_footage numeric(20,0),
+ product_store_id TEXT,
+ default_days_to_ship numeric(20,0),
+ opened_date TEXT,
+ closed_date TEXT,
+ description TEXT,
+ default_weight_uom_id TEXT,
+ geo_point_id TEXT,
+ organized TEXT,
+ is_disable TEXT,
+ remarks TEXT,
+ depot_type TEXT,
+ last_updated_stamp TEXT,
+ last_updated_tx_stamp TEXT,
+ created_stamp TEXT,
+ created_tx_stamp TEXT,
+ reserve_order_enum_id TEXT,
+  facility_size  TEXT,
+   facility_size_uom_id TEXT,
+   default_dimension_uom_id TEXT,
+     skip_pack_inv_check TEXT,
+     manuf_alloc_enable TEXT
+ );
+
+
+
+ CREATE TABLE schedule
+ (
+ seq_id TEXT PRIMARY KEY ,
+ schedule_code TEXT NOT NULL,
+ schedule_name TEXT,
+ schedule_type TEXT,
+ description TEXT,
+ created_on TEXT,
+ created_by TEXT,
+ last_updated_stamp TEXT,
+ last_updated_tx_stamp TEXT,
+ created_tx_stamp TEXT ,
+ created_stamp TEXT
+ );
+
+
+ CREATE TABLE asset_schedule_assoc
+ (
+ asa_seq_id TEXT PRIMARY KEY,
+ asset_type TEXT NOT NULL,
+ schedule_code TEXT NOT NULL,
+ sequence_code TEXT,
+ duration REAL,
+ uom_of_duration TEXT,
+ description TEXT,
+ is_dpr TEXT,
+ make_code TEXT,
+ model_model TEXT,
+ created_on TEXT,
+ created_by TEXT,
+ last_updated_stamp TEXT,
+ last_updated_tx_stamp TEXT,
+ created_stamp TEXT,
+ created_tx_stamp TEXT,
+ target_plan_months TEXT
+ );
+
+
+
+
+ CREATE TABLE measure_or_activity_list
+ (
+ seq_id TEXT PRIMARY KEY ,
+ activity_id TEXT NOT NULL,
+ activity_name TEXT,
+ activity_type TEXT,
+ unit_of_measure TEXT,
+ description TEXT,
+ created_on TEXT,
+ created_by TEXT,
+ last_updated_stamp TEXT,
+ last_updated_tx_stamp TEXT,
+ created_stamp TEXT,
+ created_tx_stamp TEXT
+ );
+
+
+CREATE TABLE asset_schedule_activity_assoc
+(
+  seq_id TEXT,
+  asa_seq_id  TEXT  NOT NULL,
+  sub_asset_type  TEXT ,
+  activity_id  TEXT  NOT NULL,
+  activity_position_id  TEXT ,
+  make_code  TEXT ,
+  model_code  TEXT ,
+  lower_limit  TEXT ,
+  upper_limit  TEXT ,
+  description  TEXT ,
+  created_on TEXT ,
+  created_by  TEXT ,
+  last_updated_stamp  TEXT ,
+  last_updated_tx_stamp  TEXT ,
+  created_stamp  TEXT ,
+  created_tx_stamp  TEXT ,
+  activity_flag TEXT,
+  display_order TEXT,
+  report_column_header TEXT,
+  CONSTRAINT pk_asset_schedule_activity_ass PRIMARY KEY (seq_id)
+);
+
+
+
+	CREATE TABLE product_category_member
+(
+  product_category_id TEXT  ,
+  product_id TEXT  ,
+  from_date TEXT,
+  thru_date TEXT ,
+  comments TEXT,
+  sequence_num TEXT,
+  quantity TEXT,
+  last_updated_stamp TEXT,
+  last_updated_tx_stamp TEXT ,
+  created_stamp  TEXT,
+  created_tx_stamp TEXT,
+  CONSTRAINT pk_product_category_member PRIMARY KEY (product_category_id, product_id, from_date)
+);
+
+CREATE TABLE ohe_location
+
+(
+    seq_id TEXT,
+    division TEXT,
+    section TEXT,
+    pwi TEXT,
+    ohe_mast TEXT,
+    eng_feature TEXT,
+    ohe_feature TEXT,
+    remark_one TEXT,
+    remark_two TEXT,
+    latitude TEXT,
+    longitude TEXT,
+    altitude TEXT,
+    validity TEXT,
+    satellites TEXT,
+    speed TEXT,
+    heading TEXT,
+    ohe_sequence TEXT,
+    curvature TEXT,
+    curvature_remark TEXT,
+    date TEXT,
+    last_updated_stamp TEXT,
+    last_updated_tx_stamp TEXT,
+    created_stamp TEXT,
+    created_tx_stamp TEXT,
+    chainage TEXT,
+    chainage_remark TEXT,
+    structure_type TEXT,
+    track_line TEXT,
+    kilometer TEXT,
+    sequence_no TEXT,
+    facility_id TEXT NOT NULL,
+    major_section TEXT ,
+    adee_section TEXT,
+
+
+       CONSTRAINT pk_ohe_location PRIMARY KEY (seq_id)
+);
+
+
+
+CREATE TABLE data_sync_history
+(
+
+    seq_id TEXT,
+    device_id TEXT,
+    last_sync_date_time TEXT,
+    sync_start_date_time TEXT,
+    ash_sent_count TEXT,
+    asar_sent_count TEXT,
+    asc_sent_count TEXT,
+    ds_request_date_time TEXT,
+    ds_response_date_time TEXT,
+    response_status TEXT,
+    dev_ser_seq_update_date_time TEXT,
+    final_status_update TEXT
+
+
+);
+
+
+
+CREATE TABLE asset_schedule_content
+(
+
+    seq_id TEXT ,
+    content_id TEXT PRIMARY KEY,
+    from_date TEXT,
+    thru_date TEXT,
+    device_id TEXT,
+    device_seq_id TEXT,
+    device_ash_seq_id TEXT,
+    content TEXT,
+    file_name TEXT,
+    user_name
+
+);
+
+
+
+CREATE TABLE assets_schedule_history
+(
+  seq_id  TEXT,
+  facility_id  TEXT NOT NULL,
+  pb_operation_seq_id  TEXT,
+  device_id TEXT,
+  device_seq_id TEXT,
+  device_created_stamp TEXT,
+  device_last_updated_stamp TEXT,
+  asset_type  TEXT,
+  asset_id  TEXT NOT NULL,
+  schedule_code  TEXT NOT NULL,
+  schedule_date TEXT,
+  status  TEXT,
+  details_of_maint  TEXT,
+  done_by  TEXT,
+  initial_of_incharge  TEXT,
+  remarks character varying(100),
+  created_on  TEXT,
+  created_by  TEXT,
+  last_updated_stamp  TEXT,
+  last_updated_tx_stamp  TEXT,
+  created_stamp  TEXT,
+  created_tx_stamp  TEXT,
+  CONSTRAINT pk_assets_schedule_history PRIMARY KEY (facility_id,asset_type, asset_id, schedule_code, schedule_date),
+  CONSTRAINT assets_schedule_hist_1 FOREIGN KEY (schedule_code)
+      REFERENCES schedule (schedule_code) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT assets_schedule_hist_2 FOREIGN KEY (facility_id)
+            REFERENCES facility (facility_id) MATCH SIMPLE
+            ON UPDATE NO ACTION ON DELETE NO ACTION
+
+) ;
+
+
+
+
+CREATE TABLE asset_schedule_activity_record
+(
+  asset_measure_obser_seq_id  TEXT,
+  facility_id  TEXT NOT NULL,
+  asset_type  TEXT NOT NULL,
+  asset_id  TEXT NOT NULL,
+  schedule_code  TEXT NOT NULL,
+  schedule_date  TEXT NOT NULL,
+  schedule_actual_date  TEXT,
+  asset_schedule_history_id  TEXT,
+  status  TEXT,
+  device_id TEXT,
+  device_seq_id TEXT,
+  device_created_stamp TEXT,
+  device_last_updated_stamp TEXT,
+  m1  TEXT,
+  m2  TEXT,
+  m3  TEXT,
+  m4  TEXT,
+  m5  TEXT,
+  m6  TEXT,
+  m7  TEXT,
+  m8  TEXT,
+  m9  TEXT,
+  m10  TEXT,
+  m11  TEXT,
+  m12  TEXT,
+  m13  TEXT,
+  m14  TEXT,
+  m15  TEXT,
+  m16  TEXT,
+  m17  TEXT,
+  m18  TEXT,
+  m19  TEXT,
+  m20  TEXT,
+  m21  TEXT,
+  m22  TEXT,
+  m23  TEXT,
+  m24  TEXT,
+  m25  TEXT,
+  m26  TEXT,
+  m27  TEXT,
+  m28  TEXT,
+  m29  TEXT,
+  m30  TEXT,
+  m31  TEXT,
+  m32  TEXT,
+  m33 TEXT,
+  m34 TEXT,
+  m35 TEXT,
+  m36 TEXT,
+  m37 TEXT,
+  m38 TEXT,
+  m39 TEXT,
+  m40 TEXT,
+  m41 TEXT,
+  m42 TEXT,
+  m43 TEXT,
+  m44 TEXT,
+  m45 TEXT,
+  m46 TEXT,
+  m47 TEXT,
+  m48 TEXT,
+  m49 TEXT,
+  m50 TEXT,
+  a1 character varying(100),
+  a2 character varying(100),
+  a3 character varying(100),
+  a4 character varying(100),
+  a5 character varying(100),
+  a6 character varying(100),
+  a7 character varying(100),
+  a8 character varying(100),
+  a9 character varying(100),
+  a10 character varying(100),
+  a11 character varying(100),
+  a12 character varying(100),
+  a13 character varying(100),
+  a14 character varying(100),
+  a15 character varying(100),
+  a16 character varying(100),
+  a17 character varying(100),
+  a18 character varying(100),
+  a19 character varying(100),
+  a20 character varying(100),
+  a21 character varying(100),
+  a22 character varying(100),
+  a23 character varying(100),
+  a24 character varying(100),
+  a25 character varying(100),
+  a26 character varying(100),
+  a27 character varying(100),
+  a28 character varying(100),
+  a29 character varying(100),
+  a30 character varying(100),
+  a31 character varying(100),
+  a32 character varying(100),
+  a33 character varying(100),
+  a34 character varying(100),
+  a35 character varying(100),
+  a36 character varying(100),
+  a37 character varying(100),
+  a38 character varying(100),
+  a39 character varying(100),
+  a40 character varying(100),
+  a41 character varying(100),
+  a42 character varying(100),
+  a43 character varying(100),
+  a44 character varying(100),
+  a45 character varying(100),
+  a46 character varying(100),
+  a47 character varying(100),
+  a48 character varying(100),
+  a49 character varying(100),
+  a50 character varying(100),
+
+  mma1 TEXT,
+  mma2 TEXT,
+  mma3 TEXT,
+  mma4 TEXT,
+  mma5 TEXT,
+  mma6 TEXT,
+  mma7 TEXT,
+  mma8 TEXT,
+  mma9 TEXT,
+  mma10 TEXT,
+
+   make TEXT,
+    model TEXT,
+  details_of_maint  TEXT,
+  done_by  TEXT,
+  initial_of_incharge  TEXT,
+  remarks  TEXT,
+  created_on  TEXT,
+  created_by  TEXT,
+  last_updated_stamp  TEXT,
+  last_updated_tx_stamp  TEXT,
+  created_stamp  TEXT,
+  created_tx_stamp  TEXT,
+
+
+
+  CONSTRAINT pk_asset_schedule_activity_rec PRIMARY KEY (facility_id, asset_type, asset_id, schedule_code, schedule_date),
+  CONSTRAINT asset_schedule_rec_1 FOREIGN KEY (schedule_code)
+      REFERENCES schedule (schedule_code) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+      CONSTRAINT asset_schedule_rec_2 FOREIGN KEY (facility_id)
+            REFERENCES facility (facility_id) MATCH SIMPLE
+            ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+
+ CREATE TABLE asset_master_data
+(
+  seq_id TEXT NOT NULL,
+  asset_type  TEXT ,
+  section  TEXT ,
+  kilometer double precision,
+  position_id  TEXT ,
+  part1  TEXT ,
+  part2  TEXT ,
+  part3  TEXT ,
+  asset_id  TEXT ,
+  facility_id  TEXT ,
+  elementary_section  TEXT ,
+  capacity_rating  TEXT ,
+  oem_serial  TEXT ,
+  rly_assigned_serial  TEXT ,
+  parent_asset_type  TEXT ,
+  parent_asset_type_id  TEXT ,
+  equipped_date  TEXT ,
+  strip_date  TEXT ,
+  date_of_commision  TEXT ,
+  date_of_manufacture  TEXT ,
+  date_of_received  TEXT ,
+  source  TEXT ,
+  make  TEXT ,
+  model  TEXT ,
+  implantation  TEXT ,
+  structure  TEXT ,
+  warranty_amc character(1),
+  warranty_amc_end_date  TEXT ,
+  vendor  TEXT ,
+  expiry_date  TEXT ,
+  created_on  TEXT ,
+  created_by  TEXT ,
+  last_updated_stamp  TEXT ,
+  last_updated_tx_stamp  TEXT ,
+  created_stamp  TEXT ,
+  created_tx_stamp  TEXT ,
+  location_position  TEXT ,
+  type TEXT,
+  major_section TEXT,
+  adee_section TEXT ,
+  name_plate_details TEXT ,
+  end1_side1 TEXT ,
+  end2_side2 TEXT,
+  station TEXT ,
+  lug_date TEXT ,
+   remark1 TEXT ,
+   remark2 TEXT,
+  CONSTRAINT pk_asset_master_data PRIMARY KEY (seq_id),
+  CONSTRAINT asset_facility FOREIGN KEY (facility_id)
+      REFERENCES facility (facility_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION,
+  CONSTRAINT asset_mast_pro FOREIGN KEY (asset_type)
+      REFERENCES product (product_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+
+ CREATE UNIQUE INDEX asset_mast_unique
+  ON asset_master_data
+  (asset_type, asset_id, section, facility_id  );
+
+
+
+
+ CREATE TABLE asset_monthly_targets
+ (
+ seq_id TEXT,
+ facility_id TEXT NOT NULL,
+ elementary_section TEXT,
+ schedule_type TEXT NOT NULL,
+ asset_type TEXT NOT NULL,
+ target_jan REAL,
+ target_feb REAL,
+ target_mar REAL,
+ target_apr REAL,
+ target_may REAL,
+ target_june REAL,
+ target_july REAL,
+ target_aug REAL,
+ target_sep REAL,
+ target_oct REAL,
+ target_nov REAL,
+ target_dec REAL,
+ year TEXT NOT NULL,
+ created_on TEXT,
+ created_by TEXT,
+ last_updated_stamp TEXT,
+ last_updated_tx_stamp TEXT,
+ created_stamp TEXT,
+ created_tx_stamp TEXT,
+ PRIMARY KEY (facility_id, schedule_type, asset_type, year)
+ );
+
+ CREATE TABLE asset_status_update
+ (
+ seq_id TEXT PRIMARY KEY,
+ created_date TEXT,
+ asset_id TEXT,
+ asset_type TEXT,
+ facility_id TEXT,
+ date_of_status TEXT,
+ status TEXT,
+ defect_observed TEXT,
+ reason_of_status_change TEXT,
+ schedule TEXT,
+ remarks TEXT,
+ current_status TEXT,
+ created_by TEXT,
+ created_on TEXT,
+ last_updated_stamp TEXT,
+ last_updated_tx_stamp TEXT,
+ created_stamp TEXT,
+ created_tx_stamp TEXT
+ );
+
+
+CREATE TABLE elementary_sections
+(
+  seq_id  NOT NULL,
+  elementary_section_code  TEXT ,
+  facility_id  TEXT ,
+  tpc_board  TEXT ,
+  devision_id  TEXT ,
+  section_code  TEXT ,
+  station_code  TEXT ,
+  sector_code  TEXT ,
+  sub_sector_code  TEXT ,
+  siding_main  TEXT ,
+  track_code  TEXT ,
+  from_km  TEXT ,
+  from_seq  TEXT ,
+  to_km  TEXT ,
+  to_seq  TEXT ,
+  multi_es_remark  TEXT ,
+  longitudinal_dn  TEXT ,
+  description  TEXT ,
+  protection_crossover  TEXT ,
+  protection_turnout  TEXT ,
+  is_auto_dead  TEXT ,
+  remarks_shunting  TEXT ,
+  remarks_no  TEXT ,
+  longitudinal  TEXT ,
+  alternate_supply  TEXT ,
+  last_updated_stamp  TEXT ,
+  last_updated_tx_stamp  TEXT ,
+  created_stamp  TEXT ,
+  created_tx_stamp  TEXT ,
+  CONSTRAINT pk_elementary_sections PRIMARY KEY (seq_id),
+  CONSTRAINT fac_es FOREIGN KEY (facility_id)
+      REFERENCES   facility (facility_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+);
+
+CREATE TABLE  power_blocks
+(
+  pb_operation_seq_id  TEXT  NOT NULL,
+  created_date  TEXT ,
+  facility_id  TEXT ,
+  type_of_operation  TEXT ,
+  shadow_block  TEXT ,
+  elementary_section_code  TEXT ,
+  section  TEXT ,
+  line  TEXT ,
+  line2  TEXT ,
+  req_department  TEXT ,
+  req_period  TEXT ,
+  reqn_by  TEXT ,
+  ptw_availed_from_date_time  TEXT ,
+  tpc_no_ptw_issue  TEXT ,
+  field_no_ptw_issue  TEXT ,
+  ptw_availed_thru_date_time  TEXT ,
+  tpc_no_ptw_return  TEXT ,
+  field_no_ptw_return  TEXT ,
+  purpose  TEXT ,
+  pb_requested_from_date_time ,
+  pb_requested_thru_date_time  TEXT ,
+  pb_granted_from_date_time  TEXT ,
+  pb_granted_thru_date_time  TEXT ,
+  staff_to_work  TEXT ,
+  post  TEXT ,
+  switching_station  TEXT ,
+  switching_equipment  TEXT ,
+  equipment_to_work  TEXT ,
+  special_remarks  TEXT ,
+  remarks  TEXT ,
+  tpc_board  TEXT ,
+  schedule  TEXT ,
+  supervisor_incharge  TEXT ,
+  current_status  TEXT ,
+  created_on  TEXT ,
+  created_by  TEXT ,
+  last_updated_stamp  TEXT ,
+  last_updated_tx_stamp  TEXT ,
+  created_stamp  TEXT ,
+  created_tx_stamp  TEXT ,
+  grant_period  TEXT ,
+  CONSTRAINT pk_power_blocks PRIMARY KEY (pb_operation_seq_id)
+);
+
+
+CREATE TABLE user_login
+(
+  user_login_id  TEXT  NOT NULL,
+  current_password  TEXT ,
+  password_hint  TEXT ,
+  is_system  TEXT ,
+  enabled  TEXT ,
+  has_logged_out  TEXT ,
+  require_password_change  TEXT ,
+  last_currency_uom  TEXT ,
+  last_locale  TEXT ,
+  last_time_zone  TEXT ,
+  disabled_date_time  TEXT ,
+  successive_failed_logins numeric(20,0),
+  user_ldap_dn  TEXT ,
+  last_updated_stamp  TEXT ,
+  last_updated_tx_stamp  TEXT ,
+  created_stamp  TEXT ,
+  created_tx_stamp  TEXT ,
+  party_id  TEXT ,
+  external_auth_id  TEXT ,
+  Device_IMEI TEXT,
+  CONSTRAINT pk_user_login PRIMARY KEY (user_login_id)
+);
+
+
+CREATE TABLE  user_login_history
+(
+  user_login_id  TEXT  NOT NULL,
+  visit_id  TEXT ,
+  from_date  TEXT  NOT NULL,
+  thru_date  TEXT ,
+  password_used  TEXT ,
+  successful_login character(1),
+  last_updated_stamp  TEXT ,
+  last_updated_tx_stamp  TEXT ,
+  created_stamp  TEXT ,
+  created_tx_stamp  TEXT ,
+  party_id  TEXT ,
+  CONSTRAINT pk_user_login_history PRIMARY KEY (user_login_id, from_date)
+);
+
+CREATE TABLE device
+(
+  Device_IMEI TEXT,
+  facility_id TEXT,
+ CONSTRAINT pk_device PRIMARY KEY (Device_IMEI)
+) ;
+
+CREATE TABLE app_device_unit
+(
+  seq_id TEXT NOT NULL,
+  app_device_seq_id TEXT,
+  unit_type TEXT,
+  unit_id TEXT,
+  last_updated_stamp TEXT,
+  last_updated_tx_stamp TEXT,
+  created_stamp TEXT,
+  created_tx_stamp TEXT,
+    CONSTRAINT pk_app_device_unit PRIMARY KEY (seq_id),
+    CONSTRAINT app_device_unit_seqid FOREIGN KEY (app_device_seq_id)
+        REFERENCES app_device (seq_id) MATCH SIMPLE
+        ON UPDATE NO ACTION ON DELETE NO ACTION,
+    CONSTRAINT app_device_unit_unitid FOREIGN KEY (unit_id)
+        REFERENCES facility (facility_id) MATCH SIMPLE
+        ON UPDATE NO ACTION ON DELETE NO ACTION
+
+
+);

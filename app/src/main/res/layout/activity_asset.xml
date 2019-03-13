@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="trd.ams.activity.AssetActivity"
+    android:orientation="vertical"
+    android:layout_margin="12dp">
+
+    <include
+        layout="@layout/activity_title_bar"/>
+
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="right"
+        android:textSize="14sp"
+
+        android:layout_marginBottom="5dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spMeasurementDate"
+                android:layout_marginBottom="15dp"
+                android:editable="false"
+                android:hint="select date"/>
+
+            <Spinner
+                android:spinnerMode="dialog"
+                android:prompt="@string/depot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spDepot"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+            </Spinner>
+
+            <Spinner
+                android:spinnerMode="dialog"
+                android:prompt="@string/power_blocks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spPowerBlock"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+            </Spinner>
+
+
+            <Spinner
+                android:spinnerMode="dialog"
+                android:prompt="@string/elementary_sections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spElementarySection"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+            </Spinner>
+
+
+
+            <Spinner
+                android:spinnerMode="dialog"
+                android:prompt="@string/asset_types"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spAssetType"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+            </Spinner>
+
+
+            <Spinner
+                android:spinnerMode="dialog"
+                android:prompt="@string/schedule_codes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spScheduleCode"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+            </Spinner>
+
+
+
+
+            <Spinner
+                android:spinnerMode="dialog"
+                android:prompt="@string/gps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spGPS"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+
+            </Spinner>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/username_text_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/etKilometer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Enter Kilometer"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            <Spinner
+                android:spinnerMode="dialog"
+                android:prompt="@string/assets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spAsset"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+
+            </Spinner>
+
+
+
+
+            <Button
+                android:id="@+id/btn_next_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:background="#738b28"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/location_results" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_datasync"
+        android:title="Data Sync" />
+
+    <item
+        android:id="@+id/item_report"
+        android:title="Reports and Status" />
+
+    <item
+        android:id="@+id/item_home"
+        android:title="Schedule Entry" />
+
+    <item
+        android:id="@+id/item_reload"
+        android:title="Reload"/>
+
+    <item
+        android:id="@+id/item_local_db"
+        android:title="Local DB status"/>
+
+    <item
+        android:id="@+id/item_terms"
+        android:title="Terms of Use" />
+
+    <item
+        android:id="@+id/item_logout"
+        android:title="Log out" />
+
+    <item
+        android:id="@+id/item_exit"
+        android:title="Exit" />
+
+
+
+
+
+</menu>

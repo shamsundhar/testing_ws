@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/slayout"
+    tools:context="trd.ams.activity.StatusActivity"
+    android:orientation="vertical"
+    android:layout_margin="0dp"
+    >
+
+    <include layout="@layout/activity_title_bar" />
+
+    <LinearLayout
+        android:id="@+id/ll_asset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_asset_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asset Id: "
+            android:textSize="16sp"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Spinner
+            android:spinnerMode="dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="26dp"
+            android:id="@+id/spEntryStatus"
+            android:entries="@array/EntryStatus"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined">
+
+        </Spinner>
+
+
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:id="@+id/ll_asset_inner">
+
+            <Button
+                android:id="@+id/btnCapture"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableRight="@drawable/image_viewer"
+                android:background="#ffffff"
+                />
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:id="@+id/tv"
+                />
+
+            <Button
+                android:id="@+id/btnFetch"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/attach"
+                android:background="#ffffff" />
+
+
+
+        </LinearLayout>-->
+
+
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/etstatus_doneby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Done By"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/etstatus_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Details of Maintenance"
+        android:inputType="textMultiLine"
+        android:minLines="1"
+        android:maxLines="5"
+        />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etstatus_remarks"
+        android:hint="Remarks"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:minLines="1"
+
+        />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etstatus_incharge"
+        android:hint="Incharge"
+        android:maxLines="1"
+        android:singleLine="true"
+        />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:background="#738b28"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/tv_win"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:text="Powered by Winfocus" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="5dp"
+           android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_win"
+            android:src="@drawable/winfocus_logo"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_trd"
+            android:src="@drawable/trd_logo"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="170dp"
+           />
+       </LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>

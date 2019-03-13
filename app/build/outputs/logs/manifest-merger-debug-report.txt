@@ -1,0 +1,365 @@
+-- Merging decision tree log ---
+provider#android.support.v4.content.FileProvider
+INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:77:9-85:20
+	android:grantUriPermissions
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:81:13-47
+	android:authorities
+		INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:79:13-76
+	android:exported
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:80:13-37
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:78:13-67
+manifest
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:2:1-89:12
+INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:2:1-89:12
+INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:2:1-89:12
+INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:2:1-89:12
+MERGED from [com.karumi:dexter:4.2.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/07d6dc312b74d260099983a0a3a3ede9/AndroidManifest.xml:17:1-32:12
+MERGED from [com.android.support:design:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4755e009308950aa1a68caa0d5a4930e/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/839624f9bbb929dc9ce8467f6b7232d1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/fbc2948446274e4a16c35307c602801e/AndroidManifest.xml:2:1-11:12
+MERGED from [net.zetetic:android-database-sqlcipher:3.5.7] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/android-database-sqlcipher-3.5.7.aar/f1f173c895228649f69d0757c727f13e/AndroidManifest.xml:2:1-4:12
+MERGED from [com.android.support:multidex:1.0.2] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/543c4a85d4e3a0dcea8e1fde0e568f2e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/2791945506d147a3c938ccca99267b7d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/360df76cfcad07e34514a11c347a323d/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/362625a37cc70ea2243073b2a135a3d9/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/81ece1e438bebb1f2df56c6ad3dd4ed9/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/3c2ae41a5e2ee213a2a3c91fd4c91e1c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/848471429035c613b65c588f7ae46b9b/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/1c66a129eef908649f10614fa09c7e96/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c7839172177f753bbe285cf420062838/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/16c7443ac33dfb017739532b634cb59e/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/94075454f26669b57b14d7202a63c270/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.0.aar/951ec0c944141088150c5d935b59e67c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.0.aar/49f8ae5203656d9dad538514e8d8757c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.0.aar/0ee79ebcdd7a19e6ab84e1626083772b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.0.aar/ba0f1f427d1b0a068b8de2cbc2b569a7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.0.aar/3e9ea4b642ad26666e3bdb9870709953/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/8c1b19b3f68daebd421c4b713d7e755f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/aab0e9a43117f49adc0fd4c9db53bddb/AndroidManifest.xml:17:1-30:12
+INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:2:1-89:12
+INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:2:1-89:12
+INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:2:1-89:12
+	package
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:3:5-22
+		INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:2:1-89:12
+		INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:2:1-89:12
+		INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:5:5-75
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:5:22-72
+uses-permission#android.permission.INTERNET
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:8:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:9:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:10:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:13:5-68
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:13:22-65
+uses-permission#android.permission.CAMERA
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:14:5-64
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:14:22-62
+application
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:17:5-87:19
+MERGED from [com.karumi:dexter:4.2.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/07d6dc312b74d260099983a0a3a3ede9/AndroidManifest.xml:26:5-30:19
+MERGED from [com.karumi:dexter:4.2.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/07d6dc312b74d260099983a0a3a3ede9/AndroidManifest.xml:26:5-30:19
+MERGED from [com.android.support:design:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4755e009308950aa1a68caa0d5a4930e/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4755e009308950aa1a68caa0d5a4930e/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/fbc2948446274e4a16c35307c602801e/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/fbc2948446274e4a16c35307c602801e/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/2791945506d147a3c938ccca99267b7d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/2791945506d147a3c938ccca99267b7d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/362625a37cc70ea2243073b2a135a3d9/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/362625a37cc70ea2243073b2a135a3d9/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/81ece1e438bebb1f2df56c6ad3dd4ed9/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/81ece1e438bebb1f2df56c6ad3dd4ed9/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/3c2ae41a5e2ee213a2a3c91fd4c91e1c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/3c2ae41a5e2ee213a2a3c91fd4c91e1c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/848471429035c613b65c588f7ae46b9b/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/848471429035c613b65c588f7ae46b9b/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/1c66a129eef908649f10614fa09c7e96/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/1c66a129eef908649f10614fa09c7e96/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c7839172177f753bbe285cf420062838/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c7839172177f753bbe285cf420062838/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/16c7443ac33dfb017739532b634cb59e/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/16c7443ac33dfb017739532b634cb59e/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/94075454f26669b57b14d7202a63c270/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/94075454f26669b57b14d7202a63c270/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/aab0e9a43117f49adc0fd4c9db53bddb/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/aab0e9a43117f49adc0fd4c9db53bddb/AndroidManifest.xml:24:5-28:19
+	android:supportsRtl
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:22:9-35
+	android:label
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:21:9-41
+	android:hardwareAccelerated
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:24:9-44
+	android:windowSoftInputMode
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:26:9-51
+	android:largeHeap
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:25:9-33
+	android:icon
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:20:9-43
+	android:allowBackup
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:19:9-36
+	android:theme
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:23:9-40
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:18:9-39
+activity#trd.ams.activity.SplashActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:27:9-35:20
+	android:screenOrientation
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:29:13-49
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:28:13-52
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:30:13-34:29
+action#android.intent.action.MAIN
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:31:17-69
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:33:27-74
+activity#trd.ams.activity.LoginActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:36:9-39:52
+	android:screenOrientation
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:39:13-49
+	android:launchMode
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:38:13-43
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:37:13-51
+activity#trd.ams.activity.AssetActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:40:9-42:52
+	android:screenOrientation
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:42:13-49
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:41:13-51
+activity#trd.ams.activity.MeasuresActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:43:9-48:52
+	android:screenOrientation
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:48:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:45:13-77
+	android:configChanges
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:46:13-96
+	android:theme
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:47:13-44
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:44:13-54
+activity#trd.ams.activity.ActivitiesActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:49:9-52:52
+	android:screenOrientation
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:52:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:51:13-64
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:50:13-56
+activity#trd.ams.activity.ResultActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:53:9-55:52
+	android:screenOrientation
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:55:13-49
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:54:13-52
+activity#trd.ams.activity.TitleBarActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:56:9-59:47
+	android:label
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:58:13-61
+	android:theme
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:59:13-44
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:57:13-54
+activity#trd.ams.activity.StatusActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:60:9-62:52
+	android:screenOrientation
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:62:13-49
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:61:13-52
+activity#trd.ams.activity.DataSyncActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:63:9-63
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:63:19-60
+activity#trd.ams.activity.DateShowActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:64:9-63
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:64:19-60
+activity#trd.ams.activity.RegistrationActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:65:9-67
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:65:19-64
+activity#trd.ams.activity.GetIdActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:66:9-60
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:66:19-57
+activity#trd.ams.activity.ReportsActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:67:9-71
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:67:19-59
+activity#trd.ams.activity.ImageActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:68:9-59
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:68:19-57
+activity#trd.ams.activity.ProgressActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:69:9-62
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:69:19-60
+activity#trd.ams.activity.AsHistoryActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:70:9-63
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:70:19-61
+activity#trd.ams.activity.AsRecordActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:71:9-63
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:71:19-60
+activity#trd.ams.activity.OverdueActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:72:9-62
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:72:19-59
+activity#trd.ams.activity.AssetScheduleGraphActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:73:9-72
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:73:19-70
+activity#trd.ams.activity.GraphActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:74:9-59
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:74:19-57
+activity#trd.ams.activity.LocalDBStatusActivity
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:75:9-67
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:75:19-65
+uses-sdk
+INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+MERGED from [com.karumi:dexter:4.2.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/07d6dc312b74d260099983a0a3a3ede9/AndroidManifest.xml:22:5-24:41
+MERGED from [com.karumi:dexter:4.2.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/07d6dc312b74d260099983a0a3a3ede9/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:design:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4755e009308950aa1a68caa0d5a4930e/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4755e009308950aa1a68caa0d5a4930e/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/839624f9bbb929dc9ce8467f6b7232d1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.0.aar/839624f9bbb929dc9ce8467f6b7232d1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/fbc2948446274e4a16c35307c602801e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/fbc2948446274e4a16c35307c602801e/AndroidManifest.xml:5:5-7:41
+MERGED from [net.zetetic:android-database-sqlcipher:3.5.7] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/android-database-sqlcipher-3.5.7.aar/f1f173c895228649f69d0757c727f13e/AndroidManifest.xml:3:3-40
+MERGED from [net.zetetic:android-database-sqlcipher:3.5.7] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/android-database-sqlcipher-3.5.7.aar/f1f173c895228649f69d0757c727f13e/AndroidManifest.xml:3:3-40
+MERGED from [com.android.support:multidex:1.0.2] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/543c4a85d4e3a0dcea8e1fde0e568f2e/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:multidex:1.0.2] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/543c4a85d4e3a0dcea8e1fde0e568f2e/AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/2791945506d147a3c938ccca99267b7d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/2791945506d147a3c938ccca99267b7d/AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/360df76cfcad07e34514a11c347a323d/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/360df76cfcad07e34514a11c347a323d/AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/362625a37cc70ea2243073b2a135a3d9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/362625a37cc70ea2243073b2a135a3d9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/81ece1e438bebb1f2df56c6ad3dd4ed9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/81ece1e438bebb1f2df56c6ad3dd4ed9/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/3c2ae41a5e2ee213a2a3c91fd4c91e1c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/3c2ae41a5e2ee213a2a3c91fd4c91e1c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/848471429035c613b65c588f7ae46b9b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/848471429035c613b65c588f7ae46b9b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/1c66a129eef908649f10614fa09c7e96/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/1c66a129eef908649f10614fa09c7e96/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c7839172177f753bbe285cf420062838/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c7839172177f753bbe285cf420062838/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/16c7443ac33dfb017739532b634cb59e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/16c7443ac33dfb017739532b634cb59e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/94075454f26669b57b14d7202a63c270/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/94075454f26669b57b14d7202a63c270/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:animated-vector-drawable:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.0.aar/951ec0c944141088150c5d935b59e67c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.0.aar/951ec0c944141088150c5d935b59e67c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.0.aar/49f8ae5203656d9dad538514e8d8757c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.0.aar/49f8ae5203656d9dad538514e8d8757c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.0.aar/0ee79ebcdd7a19e6ab84e1626083772b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.0.aar/0ee79ebcdd7a19e6ab84e1626083772b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.0.aar/ba0f1f427d1b0a068b8de2cbc2b569a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.0.aar/ba0f1f427d1b0a068b8de2cbc2b569a7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.0.aar/3e9ea4b642ad26666e3bdb9870709953/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.0.aar/3e9ea4b642ad26666e3bdb9870709953/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/8c1b19b3f68daebd421c4b713d7e755f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.0.aar/8c1b19b3f68daebd421c4b713d7e755f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/aab0e9a43117f49adc0fd4c9db53bddb/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/aab0e9a43117f49adc0fd4c9db53bddb/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4755e009308950aa1a68caa0d5a4930e/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:82:13-84:57
+	android:resource
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:84:17-55
+	android:name
+		ADDED from /Users/syammanu/Downloads/testing_ws/app/src/main/AndroidManifest.xml:83:17-67
+activity#com.karumi.dexter.DexterActivity
+ADDED from [com.karumi:dexter:4.2.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/07d6dc312b74d260099983a0a3a3ede9/AndroidManifest.xml:27:9-29:72
+	android:theme
+		ADDED from [com.karumi:dexter:4.2.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/07d6dc312b74d260099983a0a3a3ede9/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.karumi:dexter:4.2.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/dexter-4.2.0.aar/07d6dc312b74d260099983a0a3a3ede9/AndroidManifest.xml:28:13-60
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4755e009308950aa1a68caa0d5a4930e/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:transition:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/1c66a129eef908649f10614fa09c7e96/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/1c66a129eef908649f10614fa09c7e96/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c7839172177f753bbe285cf420062838/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/c7839172177f753bbe285cf420062838/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/16c7443ac33dfb017739532b634cb59e/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/16c7443ac33dfb017739532b634cb59e/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/94075454f26669b57b14d7202a63c270/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/94075454f26669b57b14d7202a63c270/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4755e009308950aa1a68caa0d5a4930e/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/4755e009308950aa1a68caa0d5a4930e/AndroidManifest.xml:27:13-51
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/362625a37cc70ea2243073b2a135a3d9/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/362625a37cc70ea2243073b2a135a3d9/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/362625a37cc70ea2243073b2a135a3d9/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/362625a37cc70ea2243073b2a135a3d9/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/848471429035c613b65c588f7ae46b9b/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/848471429035c613b65c588f7ae46b9b/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/848471429035c613b65c588f7ae46b9b/AndroidManifest.xml:24:13-58
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/aab0e9a43117f49adc0fd4c9db53bddb/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/aab0e9a43117f49adc0fd4c9db53bddb/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/syammanu/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/aab0e9a43117f49adc0fd4c9db53bddb/AndroidManifest.xml:26:13-58
